@@ -1,16 +1,28 @@
-# React + Vite
+# Disney Memory Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A fun and interactive memory game built with **React**, where players try to click on Disney's characters without clicking the same character twice. The game tracks **score** and **high score**, and reshuffles the characters after each click to increase the challenge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Fetches characters dynamically from [Disney API](https://disneyapi.dev/)
+- Responsive grid layout that adapts to screen size
+- Click a character to earn points
+- Clicking the same character twice resets the score
+- Tracks high score automatically
+- Cards reshuffle after each click for increased difficulty
+- Modern card hover effects and animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Usage
 
-## Expanding the ESLint configuration
+- Click on character cards to earn points.
+- Avoid clicking the same character more than once.
+- The board reshuffles after every click.
+- High score is updated automatically.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React (Hooks: `useState`, `useEffect`)
+- JavaScript (ES6+)
+- CSS Grid & Flexbox for responsive layout
+- Fetch API for retrieving data from Disney API
